@@ -1,0 +1,32 @@
+{
+  "name": "indestructible-chat-testing",
+  "version": "1.0.0",
+  "description": "A battle-tested WebSocket/Socket.io chat application with a comprehensive testing suite covering unit tests, TDD workflows, multi-client integration testing, and abrupt-disconnection resilience — built to eliminate flaky async tests through event-driven assertions instead of fixed timeouts.",
+  "main": "src/server.js",
+  "directories": {
+    "test": "tests"
+  },
+  "scripts": {
+    "start": "node src/server.js",
+    "test": "jest",
+    "test:unit": "jest tests/unit",
+    "test:integration": "jest tests/integration --runInBand",
+    "test:coverage": "jest --coverage"
+  },
+  "devDependencies": {
+    "jest": "^29.7.0",
+    "ws": "^8.17.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/IvanOcampos/indestructible-chat-testing.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/IvanOcampos/indestructible-chat-testing/issues"
+  },
+  "homepage": "https://github.com/IvanOcampos/indestructible-chat-testing#readme"
+}
